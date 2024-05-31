@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".PostMessage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Message"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="textEnd"
+            android:paddingTop="25dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="25dp"
+            android:drawableEnd="@drawable/sendicon"
+            android:drawablePadding="15dp"
+            android:background="@drawable/shapetv"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Enter NickName"
+                android:textSize="20sp"
+                android:textColor="@color/brown"
+                android:id="@+id/etNickName"
+                android:background="@drawable/shapeedit"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:scrollbarStyle="insideInset"
+                android:hint="Type Your Message"
+                android:textSize="20sp"
+                android:textColor="@color/brown"
+                android:id="@+id/etMessage"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shapeedit"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/brown"
+                android:text="Send Message"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:id="@+id/sendBtn"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
